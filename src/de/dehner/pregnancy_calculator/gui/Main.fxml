@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.dehner.pregnancy_calculator.gui.MainController">
+   <children>
+      <FlowPane prefHeight="384.0" prefWidth="216.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <Label alignment="CENTER" text="Please input your duration:" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <TextField fx:id="numberInputField" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="218.0">
+               <children>
+                  <ComboBox fx:id="unitInputComboBox" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <Button fx:id="calculationButton" mnemonicParsing="false" text="Calculate" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <Label text="Ergebnis:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <Label fx:id="pointNumberLabel" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="218.0">
+               <children>
+                  <Label text="or" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
+               <children>
+                  <Label fx:id="percentageLabel" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

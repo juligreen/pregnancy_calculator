@@ -17,7 +17,8 @@ public class Calculation {
 	}
 
 	public static double dayCalculation(double days) {
-		return 268 / days;
+		// 268 days is the average duration of a pregnancy
+		return days / 268;
 	}
 
 	public static double yearCalculation(double years) {
@@ -30,5 +31,9 @@ public class Calculation {
 
 	public static double weekCalculation(double weeks) {
 		return Calculation.dayCalculation(weeks * 7);
+	}
+
+	public static double pointNumberToPercentage(double pointNumber) {
+		return pointNumber * 100;
 	}
 }
