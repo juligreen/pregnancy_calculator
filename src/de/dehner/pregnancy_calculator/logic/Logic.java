@@ -5,13 +5,11 @@ import de.dehner.pregnancy_calculator.gui.IGUI;
 public class Logic {
 
 	private IGUI gui;
-	private double numberInput;
-	private String unitInput;
 
 	private double numberOutput;
 	private double percentage;
 
-	public void decideCalculation(String unitInput) {
+	public double decideCalculation(String unitInput, double numberInput) {
 		double output = 0;
 		switch (unitInput) {
 
@@ -37,12 +35,12 @@ public class Logic {
 			output = Calculation.yearCalculation(numberInput);
 			break;
 		}
-		this.setNumberOutput(output);
+		return output;
 
 	}
 
-	public void setPointNumberToPercentage(double pointNumber) {
-		this.setPercentage(Calculation.pointNumberToPercentage(pointNumber));
+	public double getPointNumberToPercentage(double pointNumber) {
+		return Calculation.pointNumberToPercentage(pointNumber);
 	}
 
 	public IGUI getGui() {
@@ -51,22 +49,6 @@ public class Logic {
 
 	public void setGui(IGUI gui) {
 		this.gui = gui;
-	}
-
-	public double getNumberInput() {
-		return numberInput;
-	}
-
-	public void setNumberInput(double numberInput) {
-		this.numberInput = numberInput;
-	}
-
-	public String getUnitInput() {
-		return unitInput;
-	}
-
-	public void setUnitInput(String unitInput) {
-		this.unitInput = unitInput;
 	}
 
 	public double getNumberOutput() {

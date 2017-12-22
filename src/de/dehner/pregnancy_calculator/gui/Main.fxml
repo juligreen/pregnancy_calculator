@@ -33,22 +33,12 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
                <children>
-                  <Button fx:id="calculationButton" mnemonicParsing="false" text="Calculate" />
+                  <Button fx:id="calculationButton" mnemonicParsing="false" onAction="#calculateOnButtonClick" text="Calculate" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
                <children>
-                  <Label text="Ergebnis:" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
-               <children>
-                  <Label fx:id="pointNumberLabel" text="Label" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="218.0">
-               <children>
-                  <Label text="or" />
+                  <Label text="Result:" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="218.0">
